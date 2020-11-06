@@ -43,7 +43,8 @@ function createFeatures(earthquakeData) {
             fillOpacity: 1,
             radius: feature.properties.mag * 3,
             fillColor: getColor(feature.geometry.coordinates[2]),
-            color: 'darkgreen'
+            color: 'darkgreen',
+            opacity: 0.5
         });
         return circle
     }
